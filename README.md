@@ -2,9 +2,40 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.0.6.
 
+## Functionality overview:
+
+The application contains SpaceX lunch program data from year 2006 to 2020. It containts successful lunch and land data as well. It uses a custom API for all requests
+### General functionality:
+1.The initial launch programs landing page ideally should be server-side-rendered.
+2.We can filter out launch and land program data with the given year filter.
+
+## Prerequisites
+
+Node.js and npm are essential to Angular development. 
+    
+<a href="https://docs.npmjs.com/getting-started/installing-node" target="_blank" title="Installing Node.js and updating npm">
+Get it now</a> if it's not already installed on your machine.
+
+**Verify that you are running at least node `v4.x.x` and npm `3.x.x`**
+by running `node -v` and `npm -v` in a terminal/console window.
+Older versions produce errors.
+## Recommended versions:
+   Angualr CLI:10.0.6
+   Node:12.18.3
+   npm:6.14.6
+
+## Steps to project setup
+
+1.Intall node js 
+2.clone the project code from the git repository and extract.
+3.Go to the project folder 
+4.use - npm install command by using CLI
+5.run the project by using the commands:
+ npm run dev:ssr
+
 ## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Run `npm run dev:ssr` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
 ## Code scaffolding
 
