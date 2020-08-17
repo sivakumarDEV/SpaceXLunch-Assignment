@@ -6,8 +6,8 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 The application contains SpaceX lunch program data from year 2006 to 2020. It containts successful lunch and land data as well. It uses a custom API for all requests
 ### General functionality:
-1.The initial launch programs landing page ideally should be server-side-rendered.
-2.We can filter out launch and land program data with the given year filter.
+* 1.The initial launch programs landing page ideally should be server-side-rendered.
+* 2.We can filter out launch and land program data with the given year filter.
 
 ## Prerequisites
 
