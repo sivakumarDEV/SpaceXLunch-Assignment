@@ -15,6 +15,7 @@ export class LaunchDataDashboardComponent implements OnInit {
   public selectedYear = 2006;
   public isMobile = /Android|webOS|iPhone|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
   public yearValue;
+  public developerName;
 
   constructor(public launchDataService: LaunchDataService,
     private router: Router,
@@ -22,6 +23,8 @@ export class LaunchDataDashboardComponent implements OnInit {
   ) { }
 
   ngOnInit() {
+    this.developerName="Sivakumar K"
+
     this.getInitialLaunchDetails();
     this.yearValue = this.route.snapshot.params['id'];
   }

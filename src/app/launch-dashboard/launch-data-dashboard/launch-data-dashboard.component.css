@@ -68,9 +68,14 @@ cdk-virtual-scroll-viewport {
 /* cdk-virtual-scroll-viewport::-webkit-scrollbar {
 display: none;
 } */
-.developedBy {
+.developed-by {
   height: auto;
   margin: 0px;
+  font-weight: 600;
+  color: black;
+}
+.align-center{
+  text-align: center;
 }
 
 .missionName {
