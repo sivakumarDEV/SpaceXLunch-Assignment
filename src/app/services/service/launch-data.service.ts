@@ -12,21 +12,21 @@ export class LaunchDataService {
     return this.http.get(this.basePath);
   }
 
-  public getYearLaunchData(a): Observable<any> {
-    return this.http.get(`${this.basePath}${'&launch_year='}${a}`);
+  public getYearLaunchData(year:number): Observable<any> {
+    return this.http.get(`${this.basePath}${'&launch_year='}${year}`);
   }
 
-  public successfulLaunchSpaceX(b): Observable<any> {
-    return this.http.get(`${this.basePath}${'&launch_success='}${b}`);
+  public successfulLaunchSpaceX(successfulLunchFlag:boolean): Observable<any> {
+    return this.http.get(`${this.basePath}${'&launch_success='}${successfulLunchFlag}`);
   }
 
-  public notLaunchSpaceX(c): Observable<any> {
-    return this.http.get(`${this.basePath}${'&launch_success='}${c}`);
+  public notLaunchSpaceX(successfulLunchFlag:boolean): Observable<any> {
+    return this.http.get(`${this.basePath}${'&launch_success='}${successfulLunchFlag}`);
   }
 
-  public getLanuchandLand(d): Observable<any> {
-    
-    return this.http.get(`${this.basePath}${'&launch_success=true&land_success='}${d}`);
+  public getLanuchandLand(successfulLandFlag): Observable<any> {
+
+    return this.http.get(`${this.basePath}${'&launch_success=true&land_success='}${successfulLandFlag}`);
   }
   
 }

@@ -32,33 +32,33 @@ export class LaunchDataDashboardComponent implements OnInit {
     });
   }
 
-  yearBasedSpaceX(year) {
+  yearBasedSpaceX(year:number) {
     this.router.navigate(['/year', year]);
     this.launchDataService.getYearLaunchData(year).subscribe((res) => {
       this.launchResponseData = res;
     });
   }
 
-  successfulLunch(a: boolean) {
-    this.launchDataService.successfulLaunchSpaceX(a).subscribe((res) => {
+  successfulLunch(successfulLunchFlag: boolean) {
+    this.launchDataService.successfulLaunchSpaceX(successfulLunchFlag).subscribe((res) => {
       this.launchResponseData = res;
     });
   }
 
-  notSuccessfulLunch(b: boolean) {
-    this.launchDataService.notLaunchSpaceX(b).subscribe((res) => {
+  notSuccessfulLunch(successfulLunchFlag: boolean) {
+    this.launchDataService.notLaunchSpaceX(successfulLunchFlag).subscribe((res) => {
       this.launchResponseData = res;
     });
   }
 
-  lunchSucessAndLandSucess(p: boolean) {
-    this.launchDataService.getLanuchandLand(p).subscribe((res) => {
+  lunchSucessAndLandSucess(successfulLandFlag: boolean) {
+    this.launchDataService.getLanuchandLand(successfulLandFlag).subscribe((res) => {
       this.launchResponseData = res;
     });
   }
 
-  notlunchSucessAndLandSucess(q) {
-    this.launchDataService.getLanuchandLand(q).subscribe((res) => {
+  notlunchSucessAndLandSucess(successfulLandFlag:boolean) {
+    this.launchDataService.getLanuchandLand(successfulLandFlag).subscribe((res) => {
       this.launchResponseData = res;
     });
   }

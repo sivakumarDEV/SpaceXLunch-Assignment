@@ -1,6 +1,8 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { HttpClientModule } from '@angular/common/http';
-import { MatCardModule, MatToolbarModule, MatButtonModule } from '@angular/material';
+import { MatCardModule} from '@angular/material/card';
+import { MatToolbarModule} from '@angular/material/toolbar';
+import { MatButtonModule} from '@angular/material/button';
 import {ScrollingModule} from '@angular/cdk/scrolling';
 import { LaunchDataDashboardComponent } from './launch-data-dashboard.component';
 import { RouterModule } from '@angular/router';

@@ -9,7 +9,6 @@ import { APP_BASE_HREF } from '@angular/common';
 import { existsSync } from 'fs';
 import 'localstorage-polyfill';
 const MockBrowser = require('mock-browser').mocks.MockBrowser;
-
 global['localStorage'] = localStorage;
 
 // The Express app is exported so that it can be used by serverless Functions.
